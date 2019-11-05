@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f1f1;
+    background-image: url("../img/hero_bg.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 60%;
+    height: 2000px;
+}
+
+#navbarNav > ul > li > a {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 600;
+    color: black;
+}
+
+#hero {
+    height: 90vh;
+    padding-top:15%;
+}
+
+
+
+h1 {
+    vertical-align:middle;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 34px;
+}
+
+h3 {
+    font-size: 22px; 
+}
