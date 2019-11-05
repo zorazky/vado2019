@@ -13,14 +13,25 @@ body {
     height: 2000px;
 }
 
-#navbarNav > ul > li > a {
+.solidNav {
+    background-color: #f0f1f1;
+}
+
+#navbarNav a {
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 600;
     color: black;
+    
 }
 
+nav.navWhite #navbarNav a {
+    color: white;
+}
+
+
+
 #hero {
-    height: 90vh;
+    height: 70vh;
     padding-top:15%;
 }
 
