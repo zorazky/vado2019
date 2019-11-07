@@ -118,4 +118,85 @@ h3 {
 #about {
     background-color: #232323;
     height:500px;
+    position: relative;
+}
+
+#about .container {
+    position: relative;
+}
+
+#about img {
+    position: absolute;
+    top:-70px;
+    border-radius: 50%;
+}
+
+#about h4 {
+    position: absolute;
+    color: black;
+    opacity: .25;
+
+    font-size: 125px;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-weight: 700;
+    
+    top:-90px;
+    left: 125px;
+    
+    
+}
+
+#about h2 {
+    position: absolute;
+    color: #ffed1d;
+    left:190px;
+    z-index: 2;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 30px;
+    top:10px;
+}
+
+.line {
+    position: absolute;
+    left:340px;
+    top:30px;
+    width:90px;
+    height: 3px;
+    background-color: #ffed1d;
+}
+
+.about_content {
+    display: flex;
+    justify-content: space-around;
+    padding: 100px 0;
+    
+}
+
+.about_content p {
+    font-family: 'IBM Plex Sans', sans-serif;
+    line-height: 1.8rem;
+    font-size: 1rem;
+    letter-spacing: .04rem;
+    opacity: .7;
+    
+}
+
+.numbers {
+    margin-bottom: 40px;
+}
+
+.numbers h1 {
+    font-size: 2.2rem;
+}
+
+.numbers_small {
+    font-size: 1rem;
+}
+
+.white {
+    color: #fff;
+}
+
+.yellow {
+    color: #ffed1d;
 }
