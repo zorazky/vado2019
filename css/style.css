@@ -98,5 +98,24 @@ h3 {
 }
 
 .project {
-    margin-bottom: 150px;
+    margin-bottom: 0px;
+}
+
+#trusted {
+    background-color: #e0e1e1;
+    height:350px;
+    text-align: center;
+    padding-top:60px;
+}
+
+.trustedLogos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+#about {
+    background-color: #232323;
+    height:500px;
 }
