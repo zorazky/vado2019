@@ -239,6 +239,50 @@ h3 {
     border: solid 1px #ffed1d;
 }
 
+.contact_hi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 130px;
+}
+
+
+.contact_social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 130px;
+}
+
+.contact_hi h1 {
+    color: #ffed1d;
+    font-style: italic;
+}
+
+.contact_links_top {
+
+    padding-top:20px;
+    height:65px;
+    border-bottom: solid 1px #ffed1d;
+}
+
+.contact_links_bottom {
+    padding-top:16px;
+    height:65px;
+}
+
+.contact_ico {
+    margin-right: 10px;
+}
+
+.contact_links p {
+    color: #ffed1d;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 14px;
+}
+
 footer {
     height: 50px;
 }
@@ -255,7 +299,7 @@ footer {
     font-size: 1rem;
 }
 
-.yellowB {
+.contact_links {
     
     border-left: solid 1px #ffed1d;
     border-right: solid 1px #ffed1d;
