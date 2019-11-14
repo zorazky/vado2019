@@ -1,0 +1,17 @@
+body {
+    background-color: #f0f1f1;
+    background-image: url();
+}
+
+.case_content {
+    margin-top: 50px;
+    height: 2000px;
+}
+
+#about {
+    padding-top:75px;
+}
+
+.logo_center {
+    padding-top: 50px;
+}
