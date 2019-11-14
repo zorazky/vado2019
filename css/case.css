@@ -5,7 +5,13 @@ body {
 
 .case_content {
     margin-top: 50px;
-    height: 2000px;
+    
+    
+}
+
+.case_text {
+    padding-left:0;
+    padding-right:0;
 }
 
 #about {
@@ -14,4 +20,76 @@ body {
 
 .logo_center {
     padding-top: 50px;
+}
+
+.info {
+    background-color: #ffed1d;
+    height: 60px;
+    top:-30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.info_desc {
+    padding-top:10px;
+    margin-bottom:0;
+    font-size: 10pt;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 600;
+}
+
+.info_text {
+    padding-top: 0;
+    margin-top: 0;
+    font-size: 12pt;
+    line-height: 14pt;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+}
+
+h1 {
+    margin-top:70px;
+    text-align: center;
+}
+
+h2 {
+    padding:0;
+    margin:0;
+    margin-top: 20px;
+    line-height: 24pt;
+    font-size: 18pt;
+    font-family: sans-serif;
+    font-weight: normal;
+    opacity: .9;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom:10px;
+}
+
+.icons_section {
+    margin-top:50px;
+}
+
+.icons_section img {
+    margin-bottom:20px;
+}
+
+.center_icon {
+    text-align: center;
+}
+
+.col-md-4 > p {
+    text-align: left;
+    font-size: 11pt;
+}
+
+.userFlow {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    background-color: #d2eff9;
+    padding: 75px 0;
+    margin: 75px 0;
 }
