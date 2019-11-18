@@ -93,3 +93,36 @@ h3 {
     padding: 75px 0;
     margin: 75px 0;
 }
+
+.wireframe_block {
+    margin-top: 100px;
+    padding-bottom: 0;
+    background-color: #58595b;
+    display: flex;
+    flex-direction: row;
+    justify-items: flex-start;
+    vertical-align: top;
+    color: white;
+    text-align: left;
+}
+
+.wireframe_block h1 {
+    text-align: left;
+    padding-top:75px;
+}
+
+.wireframe_block img{
+    padding-top:50px;
+    width: 100%;
+    padding-bottom:50px;
+}
+
+.ui_block {
+    background-color: #dcdede;
+    padding-top:0;
+    margin-top:0;
+}
+
+.ui_block img {
+    width: 100%;
+}
