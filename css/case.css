@@ -90,7 +90,7 @@ h3 {
     flex-direction: row;
     justify-items: center;
     background-color: #d2eff9;
-    padding: 75px 0 0 0;
+    padding: 75px 0 75px 0;
     margin: 75px 0 0 0;
 }
 
@@ -148,5 +148,20 @@ h3 {
 
 .prototype_row {
     margin-top:50px;
+}
+
+.outcomes_block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.outcomes_block img {
+    margin-top:50px;
+    margin-bottom:75px;
+    width:100%;
+}
+
+.contact_hi h1 {
+    margin-top:0;
 }
 

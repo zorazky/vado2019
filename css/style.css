@@ -41,6 +41,7 @@ h1 {
     vertical-align:middle;
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 30px;
+    line-height: 38px;
 }
 
 h3 {
@@ -91,6 +92,21 @@ h3 {
     -webkit-box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.2);
     -moz-box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.2);
     box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.2);
+}
+
+.secondaryBtn {
+    border: none;
+    color: #ffed1d;
+    background-color: #171717;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 16px;
+    width: 200px;
+    height: 50px;
+    -webkit-box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.2);
+
+    margin-bottom: 75px;
 }
 
 .arrow {
