@@ -326,3 +326,9 @@ footer {
 .yellow {
     color: #ffed1d;
 }
+
+@media (max-width: 500px) {
+    .container {
+        width: 100%;
+    }
+} 

@@ -20,6 +20,8 @@ body {
 
 .logo_center {
     padding-top: 50px;
+    width: 50%;
+    margin: auto;
 }
 
 .info {
@@ -86,12 +88,17 @@ h3 {
 }
 
 .userFlow {
+    max-width: 100%;
     display: flex;
     flex-direction: row;
     justify-items: center;
     background-color: #d2eff9;
     padding: 75px 0 75px 0;
     margin: 75px 0 0 0;
+}
+
+.userFlow img {
+    width: 50%;
 }
 
 .wireframe_block {
@@ -165,3 +172,54 @@ h3 {
     margin-top:0;
 }
 
+@media (max-width: 767px) {
+    body {
+        background-color: green;
+    }
+
+    .case_text img {
+        padding: 0;
+    }
+
+    .info {
+        height: 100%;
+        top:0px;
+        flex-direction: column;
+    }
+    
+    .info_desc p{
+        padding-top:0px;
+        font-size: 12pt;
+        text-align: left;
+    }
+    
+    .info_text p{  
+        font-size: 14pt;  
+        text-align: left;
+    }
+
+    h1 {
+        margin-top:50px;
+        text-align: center;
+        font-size: 24px;
+    }
+    
+    h2 {
+        text-align: center;
+        font-size: 16pt;
+        
+    }
+
+    .userFlow {
+        flex-direction: column;
+    }
+
+    .userFlow img {
+        width: 100%;
+    }
+
+    .case_text {
+        padding: 0;
+        margin: 0;
+    }
+}
