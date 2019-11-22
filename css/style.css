@@ -327,8 +327,115 @@ footer {
     color: #ffed1d;
 }
 
-@media (max-width: 500px) {
-    .container {
+@media (max-width: 767px) {
+    .case_text img {
+        padding: 0;
+    }
+
+    .info {
+        height: 100%;
+        top:0px;
+        flex-direction: row;
+    }
+    
+    .info_desc p{
+        padding-top:0px;
+        font-size: 12pt;
+        text-align: left;
+    }
+    
+    .info_text p{  
+        font-size: 14pt;  
+        text-align: left;
+    }
+
+    h1 {
+        margin-top:50px;
+        text-align: center;
+        font-size: 24px;
+    }
+    
+    h2 {
+        text-align: center;
+        font-size: 16pt;
+        
+    }
+
+    .userFlow {
+        flex-direction: column;
+    }
+
+    .userFlow img {
         width: 100%;
     }
-} 
+
+    .case_text {
+        padding: 0;
+        margin: 0;
+    }
+
+    .btn {
+        width:100%;
+    }
+
+
+    .contact {
+        height: 100%;
+        background-color: #171717;
+        border: solid 1px #ffed1d;
+    }
+
+    .contact_social {
+        
+        height: 80px;
+    }
+
+    .contact_hi {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        height: 50px;
+    }
+
+    .contact_hi h1 {
+        color: #ffed1d;
+        font-style: italic;
+    }
+
+    .contact_links_top {
+
+        padding-top:20px;
+        height:65px;
+        border-top: solid 1px #ffed1d;
+        border-bottom: solid 1px #ffed1d;
+    }
+
+    .contact_links_bottom {
+        padding-top:16px;
+        height:65px;
+        border-bottom: solid 1px #ffed1d;
+    }
+
+    .contact_ico {
+        margin-right: 10px;
+    }
+
+    .contact_links {
+        border-left: none;
+        border-right: none;
+        
+    }
+
+    .contact_links p {
+        text-align:center;
+        color: #ffed1d;
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 14px;
+    }
+
+    footer {
+        height: 50px;
+    }
+}
+

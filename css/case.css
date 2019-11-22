@@ -26,7 +26,7 @@ body {
 
 .info {
     background-color: #ffed1d;
-    height: 60px;
+    height: 100%;
     top:-30px;
     display: flex;
     flex-direction: row;
@@ -173,8 +173,8 @@ h3 {
 }
 
 @media (max-width: 767px) {
-    body {
-        background-color: green;
+    .hideSection {
+        display: none;
     }
 
     .case_text img {
@@ -210,6 +210,19 @@ h3 {
         
     }
 
+    .wireframe_block h1 {
+        text-align: center;
+        padding-top:40px;
+    }
+
+    .realCenter {
+        width:100%;
+        padding:0;
+        margin:0;
+        text-align: center;
+        margin:auto;
+    }
+
     .userFlow {
         flex-direction: column;
     }
@@ -222,4 +235,9 @@ h3 {
         padding: 0;
         margin: 0;
     }
+
+    .btn {
+        width:100%;
+    }
+
 }
