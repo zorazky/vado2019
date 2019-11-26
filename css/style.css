@@ -1,3 +1,11 @@
+:root { 
+    --yellow-color: #ffed1d; 
+    --light-gray-color: #f0f1f1;
+    --gray-color: #dcdede;
+    --dark-gray-color: #232323;
+    --almost-black-color: #171717;
+} 
+
 * {
     margin: 0;
     padding: 0;
@@ -26,6 +34,10 @@ body {
 
 nav.navWhite #navbarNav a {
     color: white;
+}
+
+#navbarNav a:hover {
+    opacity: .6;
 }
 
 
@@ -86,7 +98,7 @@ h3 {
 .readBtn {
     border: none;
     color: black;
-    background-color: #ffed1d;
+    background-color: var(--yellow-color);
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 16px;
     width: 200px;
@@ -96,10 +108,27 @@ h3 {
     box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.2);
 }
 
+.readBtn a {
+    text-decoration: none;
+    color: black;
+}
+
+.readBtn:hover a {
+    color: var(--yellow-color);
+}
+
+.readBtn:hover {
+    color: var(--yellow-color);
+    background-color: var(--almost-black-color);
+    -webkit-box-shadow: 2px 2px 10px 2px rgba(0,0,0,0.6);
+    -moz-box-shadow: 2px 2px 10px 2px rgba(0,0,0,0.6);
+    box-shadow: 2px 2px 10px 2px rgba(0,0,0,0.6);
+}
+
 .secondaryBtn {
     border: none;
-    color: #ffed1d;
-    background-color: #171717;
+    color: var(--yellow-color);
+    background-color: var(--almost-black-color);
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 16px;
     width: 200px;
@@ -167,7 +196,7 @@ h3 {
 
 .about_title h2 {
     position: absolute;
-    color: #ffed1d;
+    color: var(--yellow-color);
     left:190px;
     z-index: 2;
     font-family: 'IBM Plex Sans', sans-serif;
@@ -181,7 +210,7 @@ h3 {
     top:30px;
     width:90px;
     height: 3px;
-    background-color: #ffed1d;
+    background-color: var(--yellow-color);
 }
 
 .about_content {
@@ -236,7 +265,7 @@ h3 {
     top:200px;
     left:0px;
 
-    color: #ffed1d;
+    color: var(--yellow-color);
    
     z-index: 2;
     font-family: 'IBM Plex Sans', sans-serif;
@@ -250,8 +279,8 @@ h3 {
 
 .contact {
     height: 130px;
-    background-color: #171717;
-    border: solid 1px #ffed1d;
+    background-color:var(--almost-black-color);
+    border: solid 1px var(--yellow-color);
 }
 
 .contact_hi {
@@ -271,8 +300,12 @@ h3 {
     height: 130px;
 }
 
+.contact_social a:hover {
+    opacity: .5;
+}
+
 .contact_hi h1 {
-    color: #ffed1d;
+    color: var(--yellow-color);
     font-style: italic;
 }
 
@@ -280,7 +313,7 @@ h3 {
 
     padding-top:20px;
     height:65px;
-    border-bottom: solid 1px #ffed1d;
+    border-bottom: solid 1px var(--yellow-color);
 }
 
 .contact_links_bottom {
@@ -293,7 +326,7 @@ h3 {
 }
 
 .contact_links p {
-    color: #ffed1d;
+    color: var(--yellow-color);
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 14px;
 }
@@ -316,18 +349,20 @@ footer {
 
 .contact_links {
     
-    border-left: solid 1px #ffed1d;
-    border-right: solid 1px #ffed1d;
+    border-left: solid 1px var(--yellow-color);
+    border-right: solid 1px var(--yellow-color);
     height:130px;
 }
 
 
+
+
 .white {
-    color: #fff;
+    color: white;
 }
 
 .yellow {
-    color: #ffed1d;
+    color: var(--yellow-color);
 }
 
 @media (max-width: 767px) {
@@ -452,7 +487,7 @@ footer {
     .contact {
         height: 100%;
         background-color: #171717;
-        border: solid 1px #ffed1d;
+        border: solid 1px var(--yellow-color);
     }
 
     .contact_social {
@@ -469,7 +504,7 @@ footer {
     }
 
     .contact_hi h1 {
-        color: #ffed1d;
+        color: var(--yellow-color);
         font-style: italic;
         margin:0;
     }
@@ -478,14 +513,14 @@ footer {
 
         padding-top:20px;
         height:65px;
-        border-top: solid 1px #ffed1d;
-        border-bottom: solid 1px #ffed1d;
+        border-top: solid 1px var(--yellow-color);
+        border-bottom: solid 1px var(--yellow-color);
     }
 
     .contact_links_bottom {
         padding-top:16px;
         height:65px;
-        border-bottom: solid 1px #ffed1d;
+        border-bottom: solid 1px var(--yellow-color);
     }
 
     .contact_ico {
@@ -500,7 +535,7 @@ footer {
 
     .contact_links p {
         text-align:center;
-        color: #ffed1d;
+        color: var(--yellow-color);
         font-family: 'IBM Plex Sans', sans-serif;
         font-size: 14px;
     }
