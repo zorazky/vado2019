@@ -14,6 +14,9 @@
     </style>
 </head>
 <body>
+        <div id="background">
+
+        
 
         <nav class="navbar navbar-expand-lg sticky-top navWhite">
             <a class="navbar-brand" href="#">
@@ -39,43 +42,45 @@
 
         <div class="container">
                 <div id="hero">
-                        <h3>Hi there I’m Oswaldo Vázquez</h3>
-                        <h1 class="hero_text">I’m a multidisciplinary designer focusing on<br>
-                            user experience, visual and interaction design. </h1>
+                        <h3 class="anim1">Hi there I’m Oswaldo Vázquez</h3>
+                        <h1 class="hero_text anim1">I’m a multidisciplinary designer focusing on<br>
+                        user experience, visual and interaction design. </h1>
                 </div>
         </div>
 
-        <div id="projects">
+        <div id="projects trigger1">
 
             <div class="container">
                 <div class="section sectionProjects">
-                    <h4>01.</h4>
-                    <h2>Projects</h2>
+                    <h4 class="anim1">01.</h4>
+                    <h2 class="anim1">Projects</h2>
                 </div>
 
                 <div class="row project reverseMobile justify-content-between">
                     <div class="description col-md-5">
-                        <h2>Atlas powered by Sony</h2>
-                        <p>Pellentesque suscipit justo eu metus euismod eleifend. Morbi cursus mauris id ante ornare aliquet.</p>
-                        <button type="button" class="btn readBtn">Read Case Study<span class="arrow"><img src="./img/arrow.png" alt=""></span></button>
+                        <h2 class="anim2">Atlas powered by Sony</h2>
+                        <p class="anim2">Pellentesque suscipit justo eu metus euismod eleifend. Morbi cursus mauris id ante ornare aliquet.</p>
+                        <button type="button" class="btn readBtn anim2">Read Case Study<span class="arrow"><img src="./img/arrow.png" alt=""></span></button>
                     </div>
 
-                    <div class="projectImg col-md-6">
+                    <div class="projectThumb1 projectImg col-md-6">
                         <img src="./img/atlas_thumb.png" alt="">
                     </div>
+
+                    
                     
                 </div>
 
-                <div class="row project justify-content-between">
+                <div id="trigger2" class="row project justify-content-between">
 
-                        <div class="projectImg col-md-6">
+                        <div class="projectImg col-md-6 projectThumb2">
                                 <img src="./img/tripwing_thumb.png" alt="">
                         </div>
                         
                         <div class="description col-md-5">
-                            <h2>Atlas powered by Sony</h2>
-                            <p>Pellentesque suscipit justo eu metus euismod eleifend. Morbi cursus mauris id ante ornare aliquet.</p>
-                            <a href="tripwing.html"></a><button type="button" class="btn readBtn">Read Case Study<span class="arrow"><img src="./img/arrow.png" alt=""></span></button></a>
+                            <h2 class="anim3">Atlas powered by Sony</h2>
+                            <p class="anim3">Pellentesque suscipit justo eu metus euismod eleifend. Morbi cursus mauris id ante ornare aliquet.</p>
+                            <a href="tripwing.html"></a><button type="button" class="btn readBtn anim3">Read Case Study<span class="arrow"><img src="./img/arrow.png" alt=""></span></button></a>
                         </div>
                         
                 </div>
@@ -90,12 +95,12 @@
             <div class="container">
                 <h3>Trusted by</h3>
                 <div class="trustedLogos row">
-                    <img src="./img/logos_sony.png" alt="">
-                    <img src="./img/logos_parata.png" alt="">
-                    <img src="./img/logos_usas.png" alt="">
-                    <img src="./img/logos_usab.png" alt="">
-                    <img src="./img/logos_nsam.png" alt="">
-                    <img src="./img/logos_superfan.png" alt="">
+                    <img class="anim4" src="./img/logos_sony.png" alt="">
+                    <img class="anim4"  src="./img/logos_parata.png" alt="">
+                    <img class="anim4"  src="./img/logos_usas.png" alt="">
+                    <img class="anim4"  src="./img/logos_usab.png" alt="">
+                    <img class="anim4"  src="./img/logos_nsam.png" alt="">
+                    <img class="anim4"  src="./img/logos_superfan.png" alt="">
                 </div>
             </div>
         </div>
@@ -162,6 +167,8 @@
                 </footer>
             </div>
         </div>
+
+    </div>
         
     
 
@@ -170,5 +177,10 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <script src="./js/main.js"></script>
+
+        <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+      <script src="./js/app.js"></script>
 </body>
 </html>

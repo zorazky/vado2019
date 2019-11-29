@@ -12,12 +12,17 @@
     box-sizing: border-box;
 }
 
-body {
+#background {
+    background-origin: border-box;
     background-color: #f0f1f1;
     background-image: url("../img/hero_bg.png");
     background-repeat: no-repeat;
     background-position: top right;
     background-size: 60%;
+    
+}
+
+body::after {
     
 }
 
