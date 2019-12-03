@@ -21,7 +21,7 @@ const scene = new ScrollMagic.Scene({
     .addTo(controller);
 
 tl2.from(".flow1", .6, {opacity: 0, x:"-=50"})
-    .from(".flow2", .6, {opacity: 0, x:"+=50"})
+    .from(".flow2", .6, {opacity: 0, x:"-=50"})
 
 const scene2 = new ScrollMagic.Scene({
     triggerElement: ".trigger2"
