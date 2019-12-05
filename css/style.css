@@ -337,7 +337,7 @@ h3 {
 }
 
 footer {
-    height: 50px;
+    height: 100px;
 }
 
 .numbers {
@@ -368,6 +368,11 @@ footer {
 
 .yellow {
     color: var(--yellow-color);
+}
+
+.footerLogo {
+    margin-top:15px;
+    opacity: .5;
 }
 
 @media (max-width: 767px) {
