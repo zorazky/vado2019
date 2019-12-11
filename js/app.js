@@ -5,13 +5,15 @@ var tl3 = gsap.timeline();
 
 const controller = new ScrollMagic.Controller();
 
-tlstart.from("#background", 1, {opacity:0, y: "-=20"}, "+=.3")
+tlstart.from("#background", 1, {opacity:0, y: "-=20", backgroundSize: '60%'}, "+=.3")
     .from(".anim1", .8, {opacity:0, x:-200, stagger: .4})
     .from(".sectionProjects", .2, {opacity:0, y:10}, "-=1");
 
 
 tl.from(".anim2", .5, {opacity: 0, x:"-=200", stagger:.2})
+    .to("#background", .6, {backgroundSize: '45%'}, "-=1")
     .from(".projectThumb1", .4, {opacity:0, x:"+=20"}, "-=.6");
+    
     
 
 tl2.from(".anim3", .5, {opacity: 0, x:"+=50", stagger:.2})

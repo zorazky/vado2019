@@ -14,15 +14,12 @@
 
 #background {
     background-origin: border-box;
-    background-color: #f0f1f1;
+    
     background-image: url("../img/hero_bg.png");
+    background-color: #f0f1f1;
     background-repeat: no-repeat;
     background-position: top right;
-    background-size: 60%;
-    
-}
-
-body::after {
+    background-size: 55%;
     
 }
 
@@ -93,6 +90,8 @@ h3 {
     background-position: 235px 70px;
      
 }
+
+
 
 .description {
     display: flex;
@@ -240,7 +239,8 @@ h3 {
 .about_content {
     display: flex;
     justify-content: space-around;
-    padding: 100px 0;
+    padding-top: 100px;
+    padding-bottom:50px;
     
 }
 
@@ -312,7 +312,7 @@ h3 {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    height: 130px;
+    height: 120px;
 }
 
 
@@ -321,7 +321,7 @@ h3 {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    height: 130px;
+    height: 120px;
 }
 
 .contact_social a:hover {
@@ -336,7 +336,7 @@ h3 {
 .contact_links_top {
 
     padding-top:20px;
-    height:65px;
+    height:60px;
     border-bottom: solid 1px var(--yellow-color);
 }
 
