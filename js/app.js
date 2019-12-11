@@ -10,15 +10,15 @@ tlstart.from("#background", 1, {opacity:0, y: "-=20"}, "+=.3")
     .from(".sectionProjects", .2, {opacity:0, y:10}, "-=1");
 
 
-tl.from(".anim2", .6, {opacity: 0, x:"-=200", stagger:.2})
-    .from(".projectThumb1", .4, {opacity:0, x:"+=20"}, "-=.8");
+tl.from(".anim2", .5, {opacity: 0, x:"-=200", stagger:.2})
+    .from(".projectThumb1", .4, {opacity:0, x:"+=20"}, "-=.6");
     
 
-tl2.from(".anim3", .6, {opacity: 0, x:"+=50", stagger:.2})
-    .from(".projectThumb2", .4, {opacity:0, x:"-=20"}, "-=.9");
+tl2.from(".anim3", .5, {opacity: 0, x:"+=50", stagger:.2})
+    .from(".projectThumb2", .4, {opacity:0, x:"-=20"}, "-=.6");
 
 
-tl3.from(".anim4",.6, {opacity:0, y: "-=10", stagger: .3});
+tl3.from(".anim4",.5, {opacity:0, y: "-=10", stagger: .2});
     
 
 

@@ -145,6 +145,25 @@ h3 {
     margin-bottom: 75px;
 }
 
+.secondaryBtn:focus a {
+    border: none;
+}
+
+.secondaryBtn a {
+    text-decoration: none;
+    color: var(--yellow-color);
+}
+
+.secondaryBtn:hover a {
+    text-decoration: none;
+    color: var(--almost-black-color);
+}
+
+.secondaryBtn:hover {
+    background-color: var(--yellow-color);
+    color: var(--almost-black-color);
+}
+
 .arrow {
     margin-left: 10px;
 }

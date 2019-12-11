@@ -6,11 +6,11 @@ var tl4 = gsap.timeline();
 
 const controller = new ScrollMagic.Controller();
 
-tlstart.from(".logo_center", .8, {opacity:0, y: "-=20"}, "+=.3")
-    .from(".case_content", .6, {opacity:0, y:"+=10"}, "+=.3")
+tlstart.from(".logo_center", .6, {opacity:0, y: "-=20"}, "+=.2")
+    .from(".case_content", .5, {opacity:0, y:"+=10"}, "+=.2")
     .from(".info", .4, {opacity:0, y:"-=10"});
 
-tl.from(".anim1", .6, {opacity: 0, x:"-=50", stagger:.3});
+tl.from(".anim1", .4, {opacity: 0, x:"-=50", stagger:.2});
 
 const scene = new ScrollMagic.Scene({
     triggerElement: ".trigger1"
@@ -20,8 +20,8 @@ const scene = new ScrollMagic.Scene({
 .setTween(tl)
     .addTo(controller);
 
-tl2.from(".flow1", .6, {opacity: 0, x:"-=50"})
-    .from(".flow2", .6, {opacity: 0, x:"-=50"})
+tl2.from(".flow1", .4, {opacity: 0, x:"-=50"})
+    .from(".flow2", .4, {opacity: 0, x:"-=50"})
 
 const scene2 = new ScrollMagic.Scene({
     triggerElement: ".trigger2"
@@ -31,8 +31,8 @@ const scene2 = new ScrollMagic.Scene({
 .setTween(tl2)
     .addTo(controller);
 
-tl3.from(".ui1", .6, {opacity: 0, y:"-=50"})
-.from(".ui2", .6, {opacity: 0, y:"-=50"})
+tl3.from(".ui1", .4, {opacity: 0, y:"-=50"})
+.from(".ui2", .4, {opacity: 0, y:"-=50"})
 
 const scene3 = new ScrollMagic.Scene({
     triggerElement: ".trigger3"
@@ -42,8 +42,8 @@ const scene3 = new ScrollMagic.Scene({
 .setTween(tl3)
     .addTo(controller);
 
-tl4.from(".mock1", .6, {opacity: 0, y:"+=50"})
-.from(".mock2", .6, {opacity: 0, y:"+=50"})
+tl4.from(".mock1", .4, {opacity: 0, y:"+=50"})
+.from(".mock2", .4, {opacity: 0, y:"+=50"})
 
 const scene4 = new ScrollMagic.Scene({
     triggerElement: ".trigger4"

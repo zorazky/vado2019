@@ -1,6 +1,7 @@
 const nav = document.querySelector("nav");
 const hero = document.querySelector("#hero");
 
+
 const sectionOneOptions = {
     rootMargin: "-50px 0px 0px 0px"
 };
@@ -10,9 +11,14 @@ const sectionOneObserver = new IntersectionObserver(function (entries, sectionOn
         if(!entry.isIntersecting) {
             nav.classList.remove("navWhite");
             nav.classList.add("solidNav");
+            
+            
         } else {
             nav.classList.add("navWhite");
             nav.classList.remove("solidNav");
+
+           
+            
         }
     })
 }, sectionOneOptions);
