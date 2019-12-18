@@ -18,10 +18,8 @@ body {
     padding-top:75px;
 }
 
-.logo_center {
-    padding-top: 50px;
-    width: 50%;
-    margin: auto;
+.logo {
+    padding-top: 30px;
 }
 
 .info {
@@ -99,8 +97,10 @@ h3 {
     box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.30);
 }
 
-.sketchImg {
+.sketchImg img{
     margin-top:50px;
+    width: 100vw;
+    position: relative;
 }
 
 .colorThumbs {
@@ -193,12 +193,26 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
+    .logo {
+        padding: 20px;
+    }
+    
     .hideSection {
         display: none;
     }
 
     .case_text img {
         padding: 0;
+    }
+
+    .researchImg img {
+        margin-top: 30px;
+    }
+
+    .researchSection {
+        padding:0;
+        margin: 0;
     }
 
     .info {
@@ -227,9 +241,32 @@ h3 {
     
     
     h2 {
-        text-align: center;
+        text-align: left;
         font-size: 16pt;
         
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    .center_icon {
+        margin-top: 30px;
+    }
+
+    p {
+        font-size: 21px;
+    }
+
+    .ui_block {
+        
+        padding-top:30px;
+        
+    }
+
+    .col-md-4 > p {
+        
+        font-size: 16pt;
     }
 
     .wireframe_block h1 {
@@ -253,9 +290,22 @@ h3 {
         width: 100%;
     }
 
+    .prototype_row:nth-child(even) {
+        flex-direction: column-reverse;
+    }
+
     .case_text {
         padding: 0;
         margin: 0;
+    }
+
+    .prototype_row > .col-md-3, .prototype_row > .col-md-5 {
+        padding: 0;
+    }
+
+    .info_text {
+        font-size: 21px;
+        line-height: 28px;
     }
 
     .btn {
