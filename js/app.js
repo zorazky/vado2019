@@ -12,7 +12,7 @@ function updatePercentage() {
 
 const controller = new ScrollMagic.Controller();
 
-tlstart.from("#background", 1, {opacity:0, y: "-=20", backgroundSize: '60%'}, "+=.3")
+tlstart.from("#background", 1, {opacity:0, y: "-=20"}, "+=.3")
     .from("nav", .4, { y: "+=10"}, "-=.6")
     .from(".anim1", .8, {opacity:0, x:-200, stagger: .4})
     .from(".sectionProjects", .2, {opacity:0, y:10}, "-=1");
