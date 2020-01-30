@@ -4,6 +4,42 @@ var tl = gsap.timeline();
 var tl2 = gsap.timeline();
 var tl3 = gsap.timeline();
 
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    let counter = document.querySelector('.counter');
+    let loader = document.querySelector('.loader');
+    let preloader = document.querySelector('.preloader');
+    let count = 0;
+    let counterFunction = setInterval(() => {
+        if (count < 101) {
+            counter.textContent = `${count}%`;
+            loader.style.width = `${count}%`;
+            count++;
+        } else {
+            clearInterval(counterFunction);
+            fadeOut(preloader);
+
+            tlstart.from("#background", 1, {opacity:0, y: "-=20"}, "+=.3")
+                .from("nav", .4, { y: "+=10"}, "-=.6")
+                .from(".anim1", .8, {opacity:0, x:-200, stagger: .4})
+                .from(".sectionProjects", .2, {opacity:0, y:10}, "-=1");
+        }
+    }, 20);
+
+    function fadeOut(element) {
+        element.style.opacity = 1;
+
+        (function fade() {
+            if((element.style.opacity -= .1) < 0) {
+                element.style.display = 'none';
+            } else {
+                requestAnimationFrame(fade);
+            }
+        })();
+    }
+})
+
 function updatePercentage() {
     //percent.innerHTML = (tl.progress() *100 ).toFixed();
     tlBg.progress();
@@ -12,10 +48,7 @@ function updatePercentage() {
 
 const controller = new ScrollMagic.Controller();
 
-tlstart.from("#background", 1, {opacity:0, y: "-=20"}, "+=.3")
-    .from("nav", .4, { y: "+=10"}, "-=.6")
-    .from(".anim1", .8, {opacity:0, x:-200, stagger: .4})
-    .from(".sectionProjects", .2, {opacity:0, y:10}, "-=1");
+
 
 tlBg.to("#background", .2, {opacity:0});
 
