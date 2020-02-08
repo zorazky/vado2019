@@ -1,3 +1,4 @@
+/*
 const nav = document.querySelector("nav");
 const hero = document.querySelector("#hero");
 
@@ -24,3 +25,4 @@ const sectionOneObserver = new IntersectionObserver(function (entries, sectionOn
 }, sectionOneOptions);
 
 sectionOneObserver.observe(hero);
+*/

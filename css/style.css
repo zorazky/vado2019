@@ -20,11 +20,18 @@ body {
    background-color: #f0f1f1;
 }
 
+.blockScroll {
+    height: 100vh;
+    overflow-y: hidden;
+    padding-right: 15px;
+}
+
 nav {
     transition: .8s;
 }
 
 #background {
+    opacity: 0;
     padding: 0;
     margin: 0;
     position:absolute;
@@ -69,7 +76,10 @@ h1 {
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 30px;
     line-height: 38px;
+    z-index: 2;
+    mix-blend-mode: difference;
 }
+
 
 h3 {
     font-size: 18px; 

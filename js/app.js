@@ -10,17 +10,22 @@ document.addEventListener('DOMContentLoaded', () => {
     let counter = document.querySelector('.counter');
     let loader = document.querySelector('.loader');
     let preloader = document.querySelector('.preloader');
+    let body = document.querySelector('body');
     let count = 0;
     let counterFunction = setInterval(() => {
+        body.classList.add("blockScroll")
         if (count < 101) {
             counter.textContent = `${count}%`;
             loader.style.width = `${count}%`;
             count++;
         } else {
+            
+            //window.scrollTo(0, 0);
+              
             clearInterval(counterFunction);
             fadeOut(preloader);
-
-            tlstart.from("#background", 1, {opacity:0, y: "-=20"}, "+=.3")
+            body.classList.remove("blockScroll")
+            tlstart.to("#background", 1, {opacity:1}, "+=.3")
                 .from("nav", .4, { y: "+=10"}, "-=.6")
                 .from(".anim1", .8, {opacity:0, x:-200, stagger: .4})
                 .from(".sectionProjects", .2, {opacity:0, y:10}, "-=1");
