@@ -17,7 +17,7 @@ queue.on("progress", event => {
     body.classList.add("blockScroll")
     let progress = Math.floor(event.progress * 100);
 
-    counter.textContent = `${progress}%`;
+    //counter.textContent = `${progress}%`;
     loader.style.width = `${progress}%`;
     //this.progress.style.width = progress + '%';
     if (progress === 100) {
@@ -28,12 +28,10 @@ queue.on("progress", event => {
 
 queue.on("complete", event => {
     //clearInterval(counterFunction);
+    console.log("working");
     fadeOut(preloader);
-           
-    tlstart.to("#background", 1, {opacity:1}, "+=.3")
-        .from("nav", .4, { y: "+=10"}, "-=.6")
-        .from(".anim1", .8, {opacity:0, x:-200, stagger: .4})
-        .from(".sectionProjects", .2, {opacity:0, y:10}, "-=1");
+    body.classList.remove("blockScroll")
+   
         
  })
 
@@ -49,59 +47,14 @@ queue.on("complete", event => {
     })();
 }
 
-queue.on("fileload", handleFileComplete);
 
 queue.loadFile('./img/hero_bg.png');
 queue.loadFile('./img/atlas_thumb.png');
 queue.loadFile('./img/tripwing_thumb.png');
 
-function handleFileComplete(event) {
-    body.classList.remove("blockScroll")
-    
-    // var item = event.item;
-    // var type = item.type;
-    
-    // if (type == createjs.Types.IMAGE) {
-    //     gallery.appendChild(event.result);
-    //     console.log(event.result)
-    // }
-}
 
 
-// document.addEventListener('DOMContentLoaded', () => {
-    
-//     let counterFunction = setInterval(() => {
-//         body.classList.add("blockScroll")
-//         if (count < 101) {
-//             counter.textContent = `${count}%`;
-//             loader.style.width = `${count}%`;
-//             count++;
-//         } else {
-            
-//             //window.scrollTo(0, 0);
-              
-//             clearInterval(counterFunction);
-//             fadeOut(preloader);
-//             body.classList.remove("blockScroll")
-//             tlstart.to("#background", 1, {opacity:1}, "+=.3")
-//                 .from("nav", .4, { y: "+=10"}, "-=.6")
-//                 .from(".anim1", .8, {opacity:0, x:-200, stagger: .4})
-//                 .from(".sectionProjects", .2, {opacity:0, y:10}, "-=1");
-//         }
-//     }, 20);
 
-//     function fadeOut(element) {
-//         element.style.opacity = 1;
-
-//         (function fade() {
-//             if((element.style.opacity -= .1) < 0) {
-//                 element.style.display = 'none';
-//             } else {
-//                 requestAnimationFrame(fade);
-//             }
-//         })();
-//     }
-// })
 
 function updatePercentage() {
     //percent.innerHTML = (tl.progress() *100 ).toFixed();
@@ -110,6 +63,12 @@ function updatePercentage() {
   }
 
 const controller = new ScrollMagic.Controller();
+
+tlstart.to("#background", 1, {opacity:1}, "+=.3")
+.from("nav", .4, { y: "+=10"}, "-=.6")
+.from(".anim1", .8, {opacity:0, x:-200, stagger: .4})
+.from(".sectionProjects", .2, {opacity:0, y:10}, "-=1");
+
 
 
 

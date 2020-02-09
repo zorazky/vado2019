@@ -14,9 +14,10 @@ let count = 0;
 
 var queue = new createjs.LoadQueue(false);
 
+body.classList.add("blockScroll")
 queue.on("progress", event => {
     console.log(event);
-    body.classList.add("blockScroll")
+    
     let progress = Math.floor(event.progress * 100);
 
     counter.textContent = `${progress}%`;
@@ -31,10 +32,9 @@ queue.on("progress", event => {
 queue.on("complete", event => {
     //clearInterval(counterFunction);
     fadeOut(preloader);
-           
-    tlstart.from(".logo_center", .6, {opacity:0, y: "-=20"}, "+=.2")
-    .from(".case_content", .5, {opacity:0, y:"+=10"}, "+=.2")
-    .from(".info", .4, {opacity:0, y:"-=10"});
+    
+    body.classList.remove("blockScroll")
+   
         
  })
 
@@ -50,12 +50,12 @@ queue.on("complete", event => {
     })();
 }
 
-queue.on("fileload", handleFileComplete);
+
 
 queue.loadFile('../tripwing/img/tripwing_header.png');
-queue.loadFile('../tripwing/img/ico_users.png');
-queue.loadFile('../tripwing/img/ico_role.png');
-queue.loadFile('../tripwing/img/ico_scope.png');
+queue.loadFile('../img/ico_users.png');
+queue.loadFile('../img/ico_role.png');
+queue.loadFile('../img/ico_scope.png');
 queue.loadFile('../tripwing/img/flow_2.png');
 queue.loadFile('../tripwing/img/flow_1.png');
 queue.loadFile('../tripwing/img/wireframe2.png');
@@ -64,21 +64,12 @@ queue.loadFile('../tripwing/img/ui2.png');
 queue.loadFile('../tripwing/img/prototype1.gif');
 queue.loadFile('../tripwing/img/prototype2.gif');
 
-function handleFileComplete(event) {
-    body.classList.remove("blockScroll")
-    
-    // var item = event.item;
-    // var type = item.type;
-    
-    // if (type == createjs.Types.IMAGE) {
-    //     gallery.appendChild(event.result);
-    //     console.log(event.result)
-    // }
-}
 
 
 
-
+tlstart.from(".logo_center", .6, {opacity:0, y: "-=20"}, "+=.2")
+.from(".case_content", .5, {opacity:0, y:"+=10"}, "+=.2")
+.from(".info", .4, {opacity:0, y:"-=10"});
 
 tl.from(".anim1", .4, {opacity: 0, x:"-=50", stagger:.2});
 
