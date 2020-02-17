@@ -36,6 +36,10 @@ queue.on("complete", event => {
     fadeOut(preloader);
            
     body.classList.remove("blockScroll")
+
+    tlstart.from(".logo_center", .6, {opacity:0, y: "-=20"}, "+=.2")
+    .from(".case_content", .5, {opacity:0, y:"+=10"}, "+=.2")
+    .from(".info", .4, {opacity:0, y:"-=10"})
         
  })
 
@@ -76,9 +80,7 @@ queue.loadFile('../atlas/img/ui_mock_1.png');
 
 
 
-tlstart.from(".logo_center", .6, {opacity:0, y: "-=20"}, "+=.2")
-.from(".case_content", .5, {opacity:0, y:"+=10"}, "+=.2")
-.from(".info", .4, {opacity:0, y:"-=10"})
+
 
 
 

@@ -34,6 +34,11 @@ queue.on("complete", event => {
     fadeOut(preloader);
     
     body.classList.remove("blockScroll")
+
+
+    tlstart.from(".logo_center", .6, {opacity:0, y: "-=20"}, "+=.2")
+    .from(".case_content", .5, {opacity:0, y:"+=10"}, "+=.2")
+    .from(".info", .4, {opacity:0, y:"-=10"});
    
         
  })
@@ -67,9 +72,7 @@ queue.loadFile('../tripwing/img/prototype2.gif');
 
 
 
-tlstart.from(".logo_center", .6, {opacity:0, y: "-=20"}, "+=.2")
-.from(".case_content", .5, {opacity:0, y:"+=10"}, "+=.2")
-.from(".info", .4, {opacity:0, y:"-=10"});
+
 
 tl.from(".anim1", .4, {opacity: 0, x:"-=50", stagger:.2});
 

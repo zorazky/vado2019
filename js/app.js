@@ -35,6 +35,8 @@ queue.on("complete", event => {
         
  })
 
+ 
+
  function fadeOut(element) {
     element.style.opacity = 1;
 
