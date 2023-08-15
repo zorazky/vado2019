@@ -384,8 +384,9 @@ svg {
 }
 
 .contact_links_bottom {
-    padding-top:16px;
+    padding-top:40px;
     height:65px;
+    vertical-align: middle;
 }
 
 .contact_ico {
